@@ -29,6 +29,7 @@ app.use(
   }),
 );
 
+
 app.use("/", express.static(path.join(__dirname, config.api.filepathRoot)));
 
 const v1Router = express.Router();
@@ -45,5 +46,5 @@ v1Router.get("/healthz", handlerReadiness);
 app.use("/v1", v1Router);
 
 app.listen(config.api.port, () => {
-  console.log(`Server is running on port: ${config.api.port}`);
+  console.log(`Server is running on port: ${config.api.pot}`);
 });
