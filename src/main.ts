@@ -29,6 +29,7 @@ app.use(
   }),
 );
 
+
 app.use("/", express.static(path.join(__dirname, config.api.filepathRoot)));
 
 const v1Router = express.Router();
